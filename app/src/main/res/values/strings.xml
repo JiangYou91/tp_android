@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">tp_AND</string>
+    <string name="euros_label">Euros</string>
+    <string name="button_convert">Convert</string>
+</resources>
