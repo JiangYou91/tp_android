@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+   	android:orientation = "vertical" 
+    tools:context=".MainActivity" > 
+    
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+   		android:layout_height="wrap_content"
+   		android:orientation = "horizontal" > 
+	    <TextView
+	        android:id="@+id/text_euros"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/euros_label" />
+	    <EditText
+	        android:id="@+id/edit_euros"
+	        android:inputType="numberDecimal"
+	        android:layout_weight="1"
+	
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/euros_label"
+        	android:cursorVisible="true"
+	        android:enabled="true"
+	        android:focusable="true"/>
+    </LinearLayout> 
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+   		android:layout_height="wrap_content" 
+   		android:orientation = "horizontal" >  
+     	<TextView
+	        android:id="@+id/text_taux"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/taux_label" />
+	    <EditText
+	        android:id="@+id/edit_taux"
+	        android:inputType="numberDecimal|numberSigned"
+	        android:layout_weight="1"
+	
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/taux_label"
+        	android:cursorVisible="true"
+	        android:enabled="true"
+	        android:focusable="true"/>
+  	</LinearLayout> 
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+   		android:layout_height="wrap_content" 
+   		android:orientation = "horizontal" >  
+     	<TextView
+	        android:id="@+id/text_dolars"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/dolars_label" />
+	    <EditText
+	        android:id="@+id/edit_dolars"
+	        android:inputType="numberDecimal"
+	        android:layout_weight="1"
+	
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/dolars_label"
+	        android:enabled="false"
+	        android:focusable="false"/>
+  	</LinearLayout>  
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+   		android:layout_height="wrap_content" 
+   		android:orientation = "horizontal" >  
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_convert"
+        android:onClick="convertMethode"/> 
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_reset"
+        android:onClick="resetMethode"/>  
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_search"
+        android:onClick="searchMethode"/> 
+    <Button
+        android:id="@+id/update_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_update"
+        android:onClick="Update"/> 
+  	</LinearLayout> 
+</LinearLayout>
